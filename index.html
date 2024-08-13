@@ -11,7 +11,45 @@
   
 </head>
 <body>
-
+  <header>
+    <img class="logo" src="assets/logo.png" alt="logo empresa">
+    <div class="status-bar">
+      <img src="assets/icons/time.svg" alt="time">
+      <div class="status-right">
+        <img src="assets/icons/network-signal.svg" alt="network-signal">
+        <img src="assets/icons/wifi-signal.svg" alt="wifi-signal">
+        <img src="assets/icons/battery.svg" alt="battery">
+      </div>
+    </div>
+  </header>
+  <main> 
+    <nav>
+      <a href="#">
+        <img src="assets/icons/arrow-left.svg" alt="">
+        Voltar
+      </a>
+    </nav>
+    <div class="container">
+      <h1>Compras da semana</h1>
+      <div class="add-itens">
+        <input 
+          type="text"
+          id="field-to-add"
+          name="field-to-add"
+          placeholder="Adicione um novo item"
+        >
+        <label for="field-to-add"></label>
+        <button>Adicionar item</button>
+      </div>
+      <div id="itemContainer">
+      </div>
+    </div>  
+    <div class="alert">
+      <img src="assets/icons/alert.svg" alt="">
+      <p>O item foi removido da lista</p>
+      <img src="assets/icons/cancel.svg" alt="">
+    </div>
+  </main>
   <script src="script.js"></script> 
 </body>
 </html>
